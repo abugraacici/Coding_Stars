@@ -18,6 +18,6 @@
 16. ürün çıkar(Abdulbaki)
 
 # Gereksinim Dağılımları
-1. [Alper Buğra Açıcı'nın gereksinimleri](Alper Buğra Açıcı-Gereksinimler.md)
+1. [Alper Buğra Açıcı'nın gereksinimleri](https://github.com/abugraacici/Coding_Stars/blob/main/Alper%20Bu%C4%9Fra%20A%C3%A7%C4%B1c%C4%B1-Gereksinimler.md)
 2. [ABdulbaki Yakar'ın Gereksinimleri](Abdulbaki Yakar-Gereksinimler.md)
 3. ........
