@@ -5,7 +5,7 @@
 5. Ödeme Yöntemi:Ödeme işlemini size en uygun şekilde yapabilmeniz için farklı ödeme yöntemleri sunuyoruz. Güvenli ve hızlı bir şekilde ödeme yaparak alışverişinizi tamamlayabilirsiniz. Dilediğiniz yöntemi seçerek keyifli bir alışveriş deneyimi yaşayabilirsiniz!
 6. Favorilere Ekleme:Beğendiğiniz ürünleri kaybetmemek için favorilere ekleyebilirsiniz! Böylece dilediğiniz zaman kolayca ulaşabilir ve alışverişinizi daha keyifli hale getirebilirsiniz. Favorilerinize eklediğiniz ürünleri daha sonra incelemek için saklayabilirsiniz.
 7. Admin Sayfası:Geliştirdiğimiz web sitesi için bir admin bölümü oluşturuyoruz. Bu bölüm, yöneticilerin ürünleri ekleyip düzenlemesine, siparişleri ve kullanıcı işlemlerini yönetmesine, yorum ve incelemeleri denetlemesine olanak tanıyacak.   Ayrıca ödeme kontrolleri ve site ayarlarını düzenleyerek sistemin verimli ve güvenli çalışmasını sağlayacaktır.
-8. Lokasyon Ekleme:Alışveriş deneyiminizi daha hızlı ve doğru hale getirebilmek için, sistemimize teslimat adresinizi eklerken bulunduğunuz konumu da kaydedebilirsiniz. Bu sayede, bulunduğunuz yere özel ürünler ve hizmetler hakkında daha hızlı bilgi alabilir ve teslimat sürecinizi kolaylaştırabilirsiniz.
+8. Lokasyon Ekleme:Alışveriş deneyiminizi daha hızlı ve doğru hale getirebilmek için, sistemimize teslimat adresinizi eklerken bulunduğunuz konumu da kaydedebilirsiniz. Bu sayede, bulunduğunuz yere özel ürünler ve hizmetler hakkında daha hızlı bilgi alabilir ve teslimat sürecinizi kolaylaştırabilirsiniz  .
  
 
 
