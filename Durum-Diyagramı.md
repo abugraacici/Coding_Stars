@@ -1,1 +1,1 @@
-![Durum Diyagramı](images/durum_diyagramı.png)
+![Durum Diyagramı](images/Diyagram.png)
