@@ -1,4 +1,4 @@
-Frontend'i yayınladığınız domain adresi: http://frontend.com
+Frontend'i yayınladığınız domain adresi: https://www.alperbugradev.com/
 
 # Abdulbaki Yakar Frontend
 
@@ -17,7 +17,7 @@ Frontend'i yayınladığınız domain adresi: http://frontend.com
 2.Ürün Kategorilendirme  
 3.Ürün Değerlendirme Yorumları  
 4.Arama Geçmişi  
-5.Ödeme Yöntemi  
+5.Ödeme Yöntemi (Hesabım kategorisinin içerisinde yer alıyor) 
 6.Favorilere Ekleme  
 7.Admin Sayfası(Hesabım kısmının içerisinde)  
 8.Lokasyon Ekleme
