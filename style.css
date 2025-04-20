@@ -1,0 +1,714 @@
+/* Genel reset ve font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #111;
+}
+
+/* Üst bilgi çubuğu */
+.top-info-bar {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* HEADER */
+.main-header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 30px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+
+.header-left .logo {
+  height: 40px;
+}
+
+.header-center {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.header-center a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.notification {
+  position: relative;
+  display: inline-block;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+
+
+.header-center a.active {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  min-width: 200px;
+}
+
+.header-right a {
+  color: #111;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  /* ikonlar arası mesafe */
+  min-width: 250px;
+}
+
+
+
+
+/* Ürün listesi */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.product-card {
+  position: relative;
+  width: calc(100% / 6 - 20px);
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.product-card .wishlist-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+  transition: all 0.2s ease;
+}
+
+.product-card .wishlist-button i {
+  color: #ccc;
+  font-size: 12px;
+  transition: color 0.2s;
+}
+
+.product-card .wishlist-button:hover {
+  transform: scale(1.1);
+  background-color: white;
+}
+
+.product-card .wishlist-button:hover i {
+  color: #ff4757;
+}
+
+.product-card .wishlist-button.active i {
+  color: #ff4757;
+}
+
+/* Tooltip Stili */
+.product-card .wishlist-button::after {
+  content: "Favorilere Ekle/Favorilerden Çıkart";
+  position: absolute;
+  bottom: -30px;
+  right: -50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s ease;
+  z-index: 3;
+}
+
+.product-card .wishlist-button:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.product-card .wishlist-button.active::after {
+  content: "Favorilerden Çıkar";
+}
+
+.product-card>*:not(button) {
+  flex: 0 0 auto;
+  /* Buton hariç tüm çocuklar */
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.product-card button {
+  background-color: #ffa41c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: auto;
+  /* Butonu en alta iter */
+  width: calc(100% - 20px);
+  /* Padding'i hesaba katar */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-card button:hover {
+  background-color: #cc8400;
+  transform: scale(1.03);
+}
+
+.product-card .price {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.product-card .price .currency {
+  font-size: 14px;
+  color: #666;
+}
+
+.product-card .discount-price {
+  color: #2ecc71;
+  font-weight: 700;
+}
+
+.product-card .original-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.product-card .installment {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #eee;
+  margin-top: 50px;
+  font-size: 14px;
+  color: #666;
+}
+
+.about-section {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: left;
+}
+
+.about-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-section p {
+  max-width: 800px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+
+a {
+  color: inherit;
+  /* yazı rengi neyse onu kullan */
+  text-decoration: none;
+  /* altı çizgiyi kaldırır */
+}
+
+a:visited {
+  color: inherit;
+  /* tıklanmış da olsa renk değişmesin */
+}
+
+.order-tracking {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 600px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.order-tracking input {
+  padding: 10px;
+  width: 60%;
+  margin-right: 10px;
+}
+
+.order-tracking button {
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.user-management {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.user-actions button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-preview {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 40px auto;
+  border-radius: 8px;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.cart-preview ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.cart-preview li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-actions {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  /* üstten ayıran çizgi */
+}
+
+.cart-actions button {
+  background-color: #ffa41c;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cart-actions button:hover {
+  background-color: #cc8400;
+}
+
+.cart-actions .remove-from-cart {
+  background-color: #e11d48;
+}
+
+.cart-actions .remove-from-cart:hover {
+  background-color: #9f1239;
+}
+
+.admin-panel {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px dashed #ffa41c;
+  background-color: #fff8ec;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.admin-actions button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ffa41c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-product {
+  background-color: #e67e22;
+}
+
+/* Hesabım Yan Panel */
+.account-panel {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 350px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.account-panel.open {
+  right: 0;
+}
+
+.account-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.user-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.user-avatar i {
+  font-size: 30px;
+  color: #666;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.user-info h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.user-info p {
+  margin: 5px 0 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.account-menu {
+  margin: 20px 0;
+}
+
+.account-menu-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.account-menu-item i {
+  margin-right: 10px;
+  color: #666;
+  width: 20px;
+}
+
+.account-menu-item:hover {
+  color: #ffa41c;
+}
+
+.delete-account-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  padding: 12px;
+  background-color: #ff4757;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.delete-account-btn:hover {
+  background-color: #e8394a;
+}
+
+.close-panel-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #666;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.close-panel-btn:hover {
+  color: #333;
+}
+
+.location-info {
+  color: #333;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 700px;
+  padding: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-category {
+  padding: 10px 12px;
+  border: none;
+  background-color: #f0f0f0;
+  font-size: 14px;
+  border-right: 1px solid #ccc;
+  outline: none;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  background-color: #ffa41c;
+  color: #111;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-bar button:hover {
+  background-color: #cc8400;
+}
+
+.reviews-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reviews-summary {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+}
+
+.rating-overview {
+  flex: 0 0 300px;
+}
+
+.reviews-header h2 {
+  color: #0099cc;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.overall-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.rating-number {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
+.rating-stars {
+  color: #ffd700;
+  font-size: 16px;
+}
+
+.rating-count {
+  color: #666;
+  font-size: 13px;
+}
+
+.rating-bars {
+  margin: 15px 0;
+}
+
+.rating-bar-item {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+  gap: 8px;
+}
+
+.star-label {
+  min-width: 20px;
+  color: #666;
+  font-size: 13px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 6px;
+  background-color: #eee;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #ffd700;
+  border-radius: 3px;
+}
+
+.rating-count-number {
+  min-width: 25px;
+  text-align: right;
+  color: #666;
+  font-size: 13px;
+}
+
+.reviews-list {
+  flex: 1;
+}
+
+.review-item {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.reviewer-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 15px;
+}
+
+.review-date {
+  color: #666;
+  font-size: 13px;
+}
+
+.review-rating {
+  color: #ffd700;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.review-text {
+  color: #444;
+  line-height: 1.5;
+  font-size: 14px;
+}

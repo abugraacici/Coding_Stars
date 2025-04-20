@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperZone - Ana Sayfa</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="top-info-bar">
+    <p>📦 30 Gün İade ve Değişim İmkanı 📦</p>
+  </div>
+
+  <header class="main-header">
+    <div class="header-container">
+      <div class="header-left">
+        <img src="images/Logo.png" alt="SuperZone Logo" class="logo">
+      </div>
+
+      <nav class="header-center">
+        <a href="#">Ana Sayfa</a>
+        <a href="#" class="active">Ürünler</a>
+        <a href="#">Favoriler</a>
+        <a href="#">Sipariş Takibi</a>
+        <div class="location-info">
+          <i class="fas fa-map-marker-alt"></i> <span>Isparta/Turkey</span>
+        </div>
+      </nav>
+
+      <div class="header-right">
+        <div class="notification">
+          <a href="#">
+            <i class="fas fa-bell" title="Bildirim Sistemi"></i>
+            <span class="badge">3</span>
+          </a>
+        </div>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#">Giriş Yap</a>
+        <a href="#">Çıkış Yap</a>
+        <a href="#">Üye Ol</a>
+        <a href="#" id="accountBtn" class="account-link">
+          <i class="fas fa-user"></i>
+          Hesabım
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="search-bar">
+    <select class="search-category">
+      <option>Kategorilendirme</option>
+      <option>Elektronik</option>
+      <option>Ev & Yaşam</option>
+      <option>Spor</option>
+      <option>Moda</option>
+    </select>
+    <input type="text" placeholder="Ürün ara...">
+    <button><i class="fas fa-search"></i></button>
+  </div>
+
+  <main>
+    <section class="product-list">
+      <div class="product-card">
+
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i> <!-- or use a font-awesome/svg icon -->
+        </button>
+        <img src="images/anker-q10.jpg" alt="Anker Soundcore Q10">
+        <h3>Anker Soundcore Q10</h3>
+        <p>Yüksek bass, bluetooth kulak üstü kulaklık</p>
+        <div class="cart-actions">
+          <button class="add-to-cart">Sepete Ekle</button>
+          <button class="remove-from-cart">Sepetten Çıkar</button>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
+        <img src="images/Ayarlı El Egzersiz Aleti.png " alt="Ayarlı Egzersiz Aleti">
+        <h3>Ayarlı Egzersiz Aleti</h3>
+        <p>El kaslarını güçlendirmek için</p>
+        <div class="cart-actions">
+          <button class="add-to-cart">Sepete Ekle</button>
+          <button class="remove-from-cart">Sepetten Çıkar</button>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
+        <img src="images/Bambulu Cam Kavanoz Seti.png" alt="Bambulu Kavanoz Seti">
+        <h3>Bambulu Kavanoz Seti</h3>
+        <p>3'lü cam kavanoz, bambu kapaklı</p>
+        <div class="cart-actions">
+          <button class="add-to-cart">Sepete Ekle</button>
+          <button class="remove-from-cart">Sepetten Çıkar</button>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
+        <img src="images/Bandana.jpg" alt="Tarz Bandana">
+        <h3>Tarz Bandana</h3>
+        <p>Giyilebilir şık beyaz bandana</p>
+        <div class="cart-actions">
+          <button class="add-to-cart">Sepete Ekle</button>
+          <button class="remove-from-cart">Sepetten Çıkar</button>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
+        <img src="images/Çadır.png" alt="2 Kişilik Kamp Çadırı">
+        <h3>2 Kişilik Kamp Çadırı</h3>
+        <p>Hafif, su geçirmez çadır</p>
+        <div class="cart-actions">
+          <button class="add-to-cart">Sepete Ekle</button>
+          <button class="remove-from-cart">Sepetten Çıkar</button>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
+        <img src="images/Çift taraflı USB Type-C Şarj Aleti.jpg" alt="USB-C Hızlı Şarj Aleti">
+        <h3>USB-C Hızlı Şarj Aleti</h3>
+        <p>Çift taraflı Type-C kablo ile uyumlu adaptör</p>
+        <div class="cart-actions">
+          <button class="add-to-cart">Sepete Ekle</button>
+          <button class="remove-from-cart">Sepetten Çıkar</button>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
+        <img src="images/Dambıl.png" alt="Ev Tipi Dambıl">
+        <h3>Ev Tipi Dambıl</h3>
+        <p>Egzersiz için dambıl seti</p>
+        <div class="cart-actions">
+          <button class="add-to-cart">Sepete Ekle</button>
+          <button class="remove-from-cart">Sepetten Çıkar</button>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
+        <img src="images/Gamepad.png" alt="USB Gamepad">
+        <h3>USB Gamepad</h3>
+        <p>PC uyumlu ergonomik tasarım</p>
+        <div class="cart-actions">
+          <button class="add-to-cart">Sepete Ekle</button>
+          <button class="remove-from-cart">Sepetten Çıkar</button>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
+        <img src="images/Gaming Mouse Pad.jpg" alt="RGB Mouse Pad">
+        <h3>RGB Mouse Pad</h3>
+        <p>Renkli kenar ışıklı oyun mouse pad</p>
+        <div class="cart-actions">
+          <button class="add-to-cart">Sepete Ekle</button>
+          <button class="remove-from-cart">Sepetten Çıkar</button>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
+        <img src="images/Havlu.png" alt="Pamuklu Havlu">
+        <h3>Pamuklu Havlu</h3>
+        <p>Yumuşak dokulu el havlusu</p>
+        <div class="cart-actions">
+          <button class="add-to-cart">Sepete Ekle</button>
+          <button class="remove-from-cart">Sepetten Çıkar</button>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
+        <img src="images/İphone Telefon Kılıfı.jpg" alt="iPhone 15 Pro Kılıf">
+        <h3>iPhone 15 Pro Kılıf</h3>
+        <p>Lens korumalı, darbe emici telefon kılıfı</p>
+        <div class="cart-actions">
+          <button class="add-to-cart">Sepete Ekle</button>
+          <button class="remove-from-cart">Sepetten Çıkar</button>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
+        <img src="images/Klavye.jpg" alt="Lenovo Kablolu Klavye">
+        <h3>Lenovo Kablolu Klavye</h3>
+        <p>Dayanıklı, Türkçe Q kablolu klavye</p>
+        <div class="cart-actions">
+          <button class="add-to-cart">Sepete Ekle</button>
+          <button class="remove-from-cart">Sepetten Çıkar</button>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
+        <img src="images/Klavye2.jpg" alt="A4Tech Mini Klavye">
+        <h3>A4Tech Mini Klavye</h3>
+        <p>Taşınabilir, beyaz mini klavye</p>
+        <div class="cart-actions">
+          <button class="add-to-cart">Sepete Ekle</button>
+          <button class="remove-from-cart">Sepetten Çıkar</button>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
+        <img src="images/Kol Saati.jpg" alt="Şık Kol Saati">
+        <h3>Şık Kol Saati</h3>
+        <p>Siyah metal kayışlı erkek saati</p>
+        <div class="cart-actions">
+          <button class="add-to-cart">Sepete Ekle</button>
+          <button class="remove-from-cart">Sepetten Çıkar</button>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
+        <img src="images/Kulaklık.jpg" alt="Beats Studio3">
+        <h3>Beats Studio3</h3>
+        <p>Kablosuz kırmızı kulak üstü kulaklık</p>
+        <div class="cart-actions">
+          <button class="add-to-cart">Sepete Ekle</button>
+          <button class="remove-from-cart">Sepetten Çıkar</button>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
+        <img src="images/Laptop Standı.png" alt="Alüminyum Laptop Standı">
+        <h3>Alüminyum Laptop Standı</h3>
+        <p>Ayarlanabilir yükseklikli stand</p>
+        <div class="cart-actions">
+          <button class="add-to-cart">Sepete Ekle</button>
+          <button class="remove-from-cart">Sepetten Çıkar</button>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
+        <img src="images/Lazer.png" alt="Sunum Lazer Kalemi">
+        <h3>Sunum Lazer Kalemi</h3>
+        <p>USB alıcılı, kırmızı ışıklı</p>
+        <div class="cart-actions">
+          <button class="add-to-cart">Sepete Ekle</button>
+          <button class="remove-from-cart">Sepetten Çıkar</button>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
+        <img src="images/Mini Projektör.png" alt="Mini Projektör">
+        <h3>Mini Projektör</h3>
+        <p>Taşınabilir, HDMI girişli</p>
+        <div class="cart-actions">
+          <button class="add-to-cart">Sepete Ekle</button>
+          <button class="remove-from-cart">Sepetten Çıkar</button>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
+        <img src="images/Multiport Adapter.png" alt="Multiport Type-C Adaptör">
+        <h3>Multiport Type-C Adaptör</h3>
+        <p>HDMI + USB + SD kart destekli</p>
+        <div class="cart-actions">
+          <button class="add-to-cart">Sepete Ekle</button>
+          <button class="remove-from-cart">Sepetten Çıkar</button>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
+        <img src="images/Saklama Kabı.png" alt="Plastik Saklama Kabı">
+        <h3>Plastik Saklama Kabı</h3>
+        <p>Mutfak için kullanışlı kap seti</p>
+        <div class="cart-actions">
+          <button class="add-to-cart">Sepete Ekle</button>
+          <button class="remove-from-cart">Sepetten Çıkar</button>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
+        <img src="images/Ses Bombası.png" alt="Taşınabilir Bluetooth Hoparlör">
+        <h3>Taşınabilir Bluetooth Hoparlör</h3>
+        <p>Mini boyut, yüksek ses çıkışı</p>
+        <div class="cart-actions">
+          <button class="add-to-cart">Sepete Ekle</button>
+          <button class="remove-from-cart">Sepetten Çıkar</button>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
+        <img src="images/Telsiz.png" alt="Telsiz Seti">
+        <h3>Telsiz Seti</h3>
+        <p>Uzun menzil, 8 kanal destekli</p>
+        <div class="cart-actions">
+          <button class="add-to-cart">Sepete Ekle</button>
+          <button class="remove-from-cart">Sepetten Çıkar</button>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
+        <img src="images/Termos.png" alt="Paslanmaz Termos">
+        <h3>Paslanmaz Termos</h3>
+        <p>500ml, sıcak/soğuk tutma özelliği</p>
+        <div class="cart-actions">
+          <button class="add-to-cart">Sepete Ekle</button>
+          <button class="remove-from-cart">Sepetten Çıkar</button>
+        </div>
+
+      </div>
+
+      <div class="product-card">
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
+        <img src="images/Wifi Kablosuz Güvenlik Kamerası.png" alt="WiFi Güvenlik Kamerası">
+        <h3>WiFi Güvenlik Kamerası</h3>
+        <p>Gece görüşlü, kablosuz sistem</p>
+        <div class="cart-actions">
+          <button class="add-to-cart">Sepete Ekle</button>
+          <button class="remove-from-cart">Sepetten Çıkar</button>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Müşteri Değerlendirmeleri Bölümü -->
+    <section class="reviews-section">
+      <div class="reviews-summary">
+        <div class="rating-overview">
+          <div class="reviews-header">
+            <h2>Müşteri Değerlendirmeleri</h2>
+            <div class="overall-rating">
+              <div class="rating-number">4.9</div>
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="rating-count">50 değerlendirme</div>
+            </div>
+          </div>
+
+          <div class="rating-bars">
+            <div class="rating-bar-item">
+              <span class="star-label">5</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%"></div>
+              </div>
+              <span class="rating-count-number">42</span>
+            </div>
+            <div class="rating-bar-item">
+              <span class="star-label">4</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 5%"></div>
+              </div>
+              <span class="rating-count-number">2</span>
+            </div>
+            <div class="rating-bar-item">
+              <span class="star-label">3</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 3%"></div>
+              </div>
+              <span class="rating-count-number">1</span>
+            </div>
+            <div class="rating-bar-item">
+              <span class="star-label">2</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%"></div>
+              </div>
+              <span class="rating-count-number">0</span>
+            </div>
+            <div class="rating-bar-item">
+              <span class="star-label">1</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%"></div>
+              </div>
+              <span class="rating-count-number">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews-list">
+        <div class="review-item">
+          <div class="review-header">
+            <span class="reviewer-name">Varsayılan Kullanıcı 1</span>
+            <span class="review-date">15.03.2024</span>
+          </div>
+          <div class="review-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">Ürünler çok kaliteli ve hızlı kargo için teşekkürler. Kesinlikle tavsiye ediyorum.</p>
+        </div>
+
+        <div class="review-item">
+          <div class="review-header">
+            <span class="reviewer-name">Varsayılan Kullanıcı 2</span>
+            <span class="review-date">14.03.2024</span>
+          </div>
+          <div class="review-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">Fiyat/performans açısından çok başarılı. Paketleme özenli yapılmış.</p>
+        </div>
+
+        <div class="review-item">
+          <div class="review-header">
+            <span class="reviewer-name">Varsayılan Kullanıcı 3</span>
+            <span class="review-date">13.03.2024</span>
+          </div>
+          <div class="review-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p class="review-text">Genel olarak memnun kaldım. Müşteri hizmetleri çok ilgili.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h2>Hakkımızda</h2>
+      <p>SuperZone, kullanıcı dostu arayüzü ve kaliteli ürünleriyle alışveriş deneyiminizi en üst seviyeye çıkarmayı
+        amaçlar.</p>
+    </section>
+
+    <footer>
+      <p>© 2025 SuperZone - Tüm Hakları Saklıdır</p>
+    </footer>
+
+    <div class="account-panel" id="accountPanel">
+      <button class="close-panel-btn" id="closePanelBtn">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <div class="account-header">
+        <div class="user-avatar">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="user-info">
+          <h3>Varsayılan Kullanıcı</h3>
+          <p>varsayilan.kullanici@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="account-menu">
+        <div class="account-menu-item">
+          <i class="fas fa-shopping-bag"></i>
+          Siparişlerim
+        </div>
+        <div class="account-menu-item">
+          <i class="fas fa-heart"></i>
+          Favorilerim
+        </div>
+        <div class="account-menu-item">
+          <i class="fas fa-map-marker-alt"></i>
+          Adreslerim
+        </div>
+        <div class="account-menu-item">
+          <i class="fas fa-cog"></i>
+          Hesap Ayarları
+        </div>
+        <div class="account-menu-item admin-page">
+          <a href="admin.html">
+            <i class="fas fa-user-shield"></i>
+            Admin Sayfası
+          </a>
+        
+      </div>
+      <div class="account-menu-item payment-method">
+        <i class="fas fa-credit-card"></i>
+        Ödeme Yöntemi
+    </div>
+    
+      </div>
+      
+       
+      
+    
+      <button class="delete-account-btn">
+        <i class="fas fa-trash-alt"></i>
+        Üyeliği Sil
+      </button>
+    </div>
+
+    <script>
+      const accountBtn = document.getElementById('accountBtn');
+      const accountPanel = document.getElementById('accountPanel');
+      const closePanelBtn = document.getElementById('closePanelBtn');
+
+      accountBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        accountPanel.classList.add('open');
+      });
+
+      closePanelBtn.addEventListener('click', () => {
+        accountPanel.classList.remove('open');
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!accountPanel.contains(e.target) && !accountBtn.contains(e.target)) {
+          accountPanel.classList.remove('open');
+        }
+      });
+    </script>
+
+  </main>
+</body>
+
+</html>
