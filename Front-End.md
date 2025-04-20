@@ -10,7 +10,7 @@ Frontend'i yayınladığınız domain adresi: https://www.alperbugradev.com/
 6.Sepetten Ürün Çıkarma  
 7.Ürün Ekleme(Admin Yetkisi,admin panelinde)  
 8.Ürün Silme(Admin Yetkisi,admin panelinde)
-
+(Dipnot:Abdulbaki Yakar gereksinimlerinden üye sil,ürün ekle,ürün çıkar admin sayfası içerisinde yer aldığından ve admins ayfası alperin gereksinimi olduğundan alper commit etmiş oldu ama bu 3 butonu ben ekledim )
 # Alper Buğra Açıcı Frontend
 
 1.Alış-Veriş Yapılacak Hesaba Giriş/Çıkış Yapma  
@@ -21,3 +21,4 @@ Frontend'i yayınladığınız domain adresi: https://www.alperbugradev.com/
 6.Favorilere Ekleme  
 7.Admin Sayfası(Hesabım kısmının içerisinde)  
 8.Lokasyon Ekleme
+(Dipnot: Kendi gereksinimlerimi Abdulbaki Yakar gereksinimleri üzerine ekleyerek sitenin son halini commit ettim)
