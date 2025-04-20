@@ -125,7 +125,75 @@ body {
   flex-direction: column;
   min-height: 100%;
 }
- 
+
+.product-card .wishlist-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+  transition: all 0.2s ease;
+}
+
+.product-card .wishlist-button i {
+  color: #ccc;
+  font-size: 12px;
+  transition: color 0.2s;
+}
+
+.product-card .wishlist-button:hover {
+  transform: scale(1.1);
+  background-color: white;
+}
+
+.product-card .wishlist-button:hover i {
+  color: #ff4757;
+}
+
+.product-card .wishlist-button.active i {
+  color: #ff4757;
+}
+
+/* Tooltip Stili */
+.product-card .wishlist-button::after {
+  content: "Favorilere Ekle/Favorilerden Çıkart";
+  position: absolute;
+  bottom: -30px;
+  right: -50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s ease;
+  z-index: 3;
+}
+
+.product-card .wishlist-button:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.product-card .wishlist-button.active::after {
+  content: "Favorilerden Çıkar";
+}
+
 .product-card>*:not(button) {
   flex: 0 0 auto;
   /* Buton hariç tüm çocuklar */
@@ -300,7 +368,7 @@ a:visited {
   gap: 5px;
   padding-top: 10px;
   border-top: 1px solid #ddd;
-
+  /* üstten ayıran çizgi */
 }
 
 .cart-actions button {
@@ -326,11 +394,56 @@ a:visited {
 .cart-actions .remove-from-cart:hover {
   background-color: #9f1239;
 }
- 
+
+.admin-panel {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px dashed #ffa41c;
+  background-color: #fff8ec;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.admin-actions button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ffa41c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .remove-product {
   background-color: #e67e22;
 }
- 
+
+/* Hesabım Yan Panel */
+.account-panel {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 350px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.account-panel.open {
+  right: 0;
+}
+
+.account-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
 
 .user-avatar {
   width: 60px;
@@ -422,7 +535,14 @@ a:visited {
 .close-panel-btn:hover {
   color: #333;
 }
- 
+
+.location-info {
+  color: #333;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 
 .search-bar {
   display: flex;
@@ -591,11 +711,4 @@ a:visited {
   color: #444;
   line-height: 1.5;
   font-size: 14px;
-}
-
-.product-price {
-  font-size: 18px;
-  font-weight: bold;
-  color: #cc3b07; /* Yeşilimsi bir ton, istersen değiştirilebilir */
-  margin: 10px 0;
 }

@@ -26,9 +26,11 @@
       <nav class="header-center">
         <a href="#">Ana Sayfa</a>
         <a href="#" class="active">Ürünler</a>
-        
+        <a href="#">Favoriler</a>
         <a href="#">Sipariş Takibi</a>
-        
+        <div class="location-info">
+          <i class="fas fa-map-marker-alt"></i> <span>Isparta/Turkey</span>
+        </div>
       </nav>
 
       <div class="header-right">
@@ -39,21 +41,37 @@
           </a>
         </div>
         <a href="#"><i class="fas fa-shopping-cart"></i></a>
-        
+        <a href="#">Giriş Yap</a>
+        <a href="#">Çıkış Yap</a>
         <a href="#">Üye Ol</a>
-        
+        <a href="#" id="accountBtn" class="account-link">
+          <i class="fas fa-user"></i>
+          Hesabım
+        </a>
       </div>
     </div>
   </header>
- 
+
+  <div class="search-bar">
+    <select class="search-category">
+      <option>Kategorilendirme</option>
+      <option>Elektronik</option>
+      <option>Ev & Yaşam</option>
+      <option>Spor</option>
+      <option>Moda</option>
+    </select>
+    <input type="text" placeholder="Ürün ara...">
+    <button><i class="fas fa-search"></i></button>
+  </div>
 
   <main>
     <section class="product-list">
       <div class="product-card">
 
-        
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i> <!-- or use a font-awesome/svg icon -->
+        </button>
         <img src="images/anker-q10.jpg" alt="Anker Soundcore Q10">
-        <div class="product-price">1.799,99 TL</div>
         <h3>Anker Soundcore Q10</h3>
         <p>Yüksek bass, bluetooth kulak üstü kulaklık</p>
         <div class="cart-actions">
@@ -64,9 +82,10 @@
       </div>
 
       <div class="product-card">
-        
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
         <img src="images/Ayarlı El Egzersiz Aleti.png " alt="Ayarlı Egzersiz Aleti">
-        <div class="product-price">299,00 TL</div>
         <h3>Ayarlı Egzersiz Aleti</h3>
         <p>El kaslarını güçlendirmek için</p>
         <div class="cart-actions">
@@ -77,9 +96,10 @@
       </div>
 
       <div class="product-card">
-        
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
         <img src="images/Bambulu Cam Kavanoz Seti.png" alt="Bambulu Kavanoz Seti">
-        <div class="product-price">2.999,99 TL</div>
         <h3>Bambulu Kavanoz Seti</h3>
         <p>3'lü cam kavanoz, bambu kapaklı</p>
         <div class="cart-actions">
@@ -90,9 +110,10 @@
       </div>
 
       <div class="product-card">
-        
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
         <img src="images/Bandana.jpg" alt="Tarz Bandana">
-        <div class="product-price">99,00 TL</div>
         <h3>Tarz Bandana</h3>
         <p>Giyilebilir şık beyaz bandana</p>
         <div class="cart-actions">
@@ -103,9 +124,10 @@
       </div>
 
       <div class="product-card">
-        
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
         <img src="images/Çadır.png" alt="2 Kişilik Kamp Çadırı">
-        <div class="product-price">11.990,00 TL</div>
         <h3>2 Kişilik Kamp Çadırı</h3>
         <p>Hafif, su geçirmez çadır</p>
         <div class="cart-actions">
@@ -116,9 +138,10 @@
       </div>
 
       <div class="product-card">
-        
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
         <img src="images/Çift taraflı USB Type-C Şarj Aleti.jpg" alt="USB-C Hızlı Şarj Aleti">
-        <div class="product-price">799,90 TL</div>
         <h3>USB-C Hızlı Şarj Aleti</h3>
         <p>Çift taraflı Type-C kablo ile uyumlu adaptör</p>
         <div class="cart-actions">
@@ -129,9 +152,10 @@
       </div>
 
       <div class="product-card">
-        
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
         <img src="images/Dambıl.png" alt="Ev Tipi Dambıl">
-        <div class="product-price">1.590,00 TL</div>
         <h3>Ev Tipi Dambıl</h3>
         <p>Egzersiz için dambıl seti</p>
         <div class="cart-actions">
@@ -142,9 +166,10 @@
       </div>
 
       <div class="product-card">
-        
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
         <img src="images/Gamepad.png" alt="USB Gamepad">
-        <div class="product-price">1.999,00 TL</div>
         <h3>USB Gamepad</h3>
         <p>PC uyumlu ergonomik tasarım</p>
         <div class="cart-actions">
@@ -155,9 +180,10 @@
       </div>
 
       <div class="product-card">
-        
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
         <img src="images/Gaming Mouse Pad.jpg" alt="RGB Mouse Pad">
-        <div class="product-price">269,00 TL</div>
         <h3>RGB Mouse Pad</h3>
         <p>Renkli kenar ışıklı oyun mouse pad</p>
         <div class="cart-actions">
@@ -168,9 +194,10 @@
       </div>
 
       <div class="product-card">
-        
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
         <img src="images/Havlu.png" alt="Pamuklu Havlu">
-        <div class="product-price">199,00 TL</div>
         <h3>Pamuklu Havlu</h3>
         <p>Yumuşak dokulu el havlusu</p>
         <div class="cart-actions">
@@ -181,9 +208,10 @@
       </div>
 
       <div class="product-card">
-        
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
         <img src="images/İphone Telefon Kılıfı.jpg" alt="iPhone 15 Pro Kılıf">
-        <div class="product-price">369,99 TL</div>
         <h3>iPhone 15 Pro Kılıf</h3>
         <p>Lens korumalı, darbe emici telefon kılıfı</p>
         <div class="cart-actions">
@@ -194,9 +222,10 @@
       </div>
 
       <div class="product-card">
-        
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
         <img src="images/Klavye.jpg" alt="Lenovo Kablolu Klavye">
-        <div class="product-price">299,00 TL</div>
         <h3>Lenovo Kablolu Klavye</h3>
         <p>Dayanıklı, Türkçe Q kablolu klavye</p>
         <div class="cart-actions">
@@ -207,9 +236,10 @@
       </div>
 
       <div class="product-card">
-        
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
         <img src="images/Klavye2.jpg" alt="A4Tech Mini Klavye">
-        <div class="product-price">999,00 TL</div>
         <h3>A4Tech Mini Klavye</h3>
         <p>Taşınabilir, beyaz mini klavye</p>
         <div class="cart-actions">
@@ -220,9 +250,10 @@
       </div>
 
       <div class="product-card">
-        
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
         <img src="images/Kol Saati.jpg" alt="Şık Kol Saati">
-        <div class="product-price">359,00 TL</div>
         <h3>Şık Kol Saati</h3>
         <p>Siyah metal kayışlı erkek saati</p>
         <div class="cart-actions">
@@ -233,9 +264,10 @@
       </div>
 
       <div class="product-card">
-        
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
         <img src="images/Kulaklık.jpg" alt="Beats Studio3">
-        <div class="product-price">390,00 TL</div>
         <h3>Beats Studio3</h3>
         <p>Kablosuz kırmızı kulak üstü kulaklık</p>
         <div class="cart-actions">
@@ -246,9 +278,10 @@
       </div>
 
       <div class="product-card">
-        
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
         <img src="images/Laptop Standı.png" alt="Alüminyum Laptop Standı">
-        <div class="product-price">790,00 TL</div>
         <h3>Alüminyum Laptop Standı</h3>
         <p>Ayarlanabilir yükseklikli stand</p>
         <div class="cart-actions">
@@ -259,9 +292,10 @@
       </div>
 
       <div class="product-card">
-        
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
         <img src="images/Lazer.png" alt="Sunum Lazer Kalemi">
-        <div class="product-price">869,00 TL</div>
         <h3>Sunum Lazer Kalemi</h3>
         <p>USB alıcılı, kırmızı ışıklı</p>
         <div class="cart-actions">
@@ -272,9 +306,10 @@
       </div>
 
       <div class="product-card">
-        
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
         <img src="images/Mini Projektör.png" alt="Mini Projektör">
-        <div class="product-price">890,00 TL</div>
         <h3>Mini Projektör</h3>
         <p>Taşınabilir, HDMI girişli</p>
         <div class="cart-actions">
@@ -285,9 +320,10 @@
       </div>
 
       <div class="product-card">
-        
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
         <img src="images/Multiport Adapter.png" alt="Multiport Type-C Adaptör">
-        <div class="product-price">690,00 TL</div>
         <h3>Multiport Type-C Adaptör</h3>
         <p>HDMI + USB + SD kart destekli</p>
         <div class="cart-actions">
@@ -298,9 +334,10 @@
       </div>
 
       <div class="product-card">
-        
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
         <img src="images/Saklama Kabı.png" alt="Plastik Saklama Kabı">
-        <div class="product-price">490,00 TL</div>
         <h3>Plastik Saklama Kabı</h3>
         <p>Mutfak için kullanışlı kap seti</p>
         <div class="cart-actions">
@@ -311,9 +348,10 @@
       </div>
 
       <div class="product-card">
-        
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
         <img src="images/Ses Bombası.png" alt="Taşınabilir Bluetooth Hoparlör">
-        <div class="product-price">5.990,00 TL</div>
         <h3>Taşınabilir Bluetooth Hoparlör</h3>
         <p>Mini boyut, yüksek ses çıkışı</p>
         <div class="cart-actions">
@@ -324,9 +362,10 @@
       </div>
 
       <div class="product-card">
-        
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
         <img src="images/Telsiz.png" alt="Telsiz Seti">
-        <div class="product-price">4590,00 TL</div>
         <h3>Telsiz Seti</h3>
         <p>Uzun menzil, 8 kanal destekli</p>
         <div class="cart-actions">
@@ -337,9 +376,10 @@
       </div>
 
       <div class="product-card">
-        
+        <button class="wishlist-button">
+          <i class="heart-icon">♥</i>
+        </button>
         <img src="images/Termos.png" alt="Paslanmaz Termos">
-        <div class="product-price">990,00 TL</div>
         <h3>Paslanmaz Termos</h3>
         <p>500ml, sıcak/soğuk tutma özelliği</p>
         <div class="cart-actions">
@@ -354,7 +394,6 @@
           <i class="heart-icon">♥</i>
         </button>
         <img src="images/Wifi Kablosuz Güvenlik Kamerası.png" alt="WiFi Güvenlik Kamerası">
-        <div class="product-price">190,00 TL</div>
         <h3>WiFi Güvenlik Kamerası</h3>
         <p>Gece görüşlü, kablosuz sistem</p>
         <div class="cart-actions">
@@ -483,6 +522,81 @@
       <p>© 2025 SuperZone - Tüm Hakları Saklıdır</p>
     </footer>
 
+    <div class="account-panel" id="accountPanel">
+      <button class="close-panel-btn" id="closePanelBtn">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <div class="account-header">
+        <div class="user-avatar">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="user-info">
+          <h3>Varsayılan Kullanıcı</h3>
+          <p>varsayilan.kullanici@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="account-menu">
+        <div class="account-menu-item">
+          <i class="fas fa-shopping-bag"></i>
+          Siparişlerim
+        </div>
+        <div class="account-menu-item">
+          <i class="fas fa-heart"></i>
+          Favorilerim
+        </div>
+        <div class="account-menu-item">
+          <i class="fas fa-map-marker-alt"></i>
+          Adreslerim
+        </div>
+        <div class="account-menu-item">
+          <i class="fas fa-cog"></i>
+          Hesap Ayarları
+        </div>
+        <div class="account-menu-item admin-page">
+          <a href="admin.html">
+            <i class="fas fa-user-shield"></i>
+            Admin Sayfası
+          </a>
+        
+      </div>
+      <div class="account-menu-item payment-method">
+        <i class="fas fa-credit-card"></i>
+        Ödeme Yöntemi
+    </div>
+    
+      </div>
+      
+       
+      
+    
+      <button class="delete-account-btn">
+        <i class="fas fa-trash-alt"></i>
+        Üyeliği Sil
+      </button>
+    </div>
+
+    <script>
+      const accountBtn = document.getElementById('accountBtn');
+      const accountPanel = document.getElementById('accountPanel');
+      const closePanelBtn = document.getElementById('closePanelBtn');
+
+      accountBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        accountPanel.classList.add('open');
+      });
+
+      closePanelBtn.addEventListener('click', () => {
+        accountPanel.classList.remove('open');
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!accountPanel.contains(e.target) && !accountBtn.contains(e.target)) {
+          accountPanel.classList.remove('open');
+        }
+      });
+    </script>
 
   </main>
 </body>
