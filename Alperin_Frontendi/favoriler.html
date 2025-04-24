@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+
+
+</head>
+
+<body>
+
+<style>
+
+
+.product-card .wishlist-button i {
+        color: #ccc;
+        font-size: 12px;
+        transition: color 0.2s;
+      }
+      
+      .product-card .wishlist-button:hover {
+        transform: scale(1.1);
+        background-color: white;
+      }
+      
+      .product-card .wishlist-button:hover i {
+        color: #ff4757;
+      }
+      
+      .product-card .wishlist-button.active i {
+        color: #ff4757;
+      }
+      
+      /* Tooltip Stili */
+      .product-card .wishlist-button::after {
+        content: "Favorilere Ekle/Favorilerden Çıkart";
+        position: absolute;
+        bottom: -30px;
+        right: -50px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 12px;
+        white-space: nowrap;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.2s ease;
+        z-index: 3;
+      }
+      
+      .product-card .wishlist-button:hover::after {
+        visibility: visible;
+        opacity: 1;
+      }
+      
+      .product-card .wishlist-button.active::after {
+        content: "Favorilerden Çıkar";
+      }
+
+
+
+
+
+</style>
+    
+
+
+
+
+</body>
+
+
+
+</html>
+
+
+
