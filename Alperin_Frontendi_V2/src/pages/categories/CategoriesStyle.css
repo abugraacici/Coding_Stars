@@ -1,0 +1,47 @@
+.page {
+}
+
+.page h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.category-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.category-left-side {
+    width: 50%;
+}
+
+.category-left-side p {
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.category-left-side p:hover {
+    background-color: #ddd;
+}
+
+.category-right-side {
+    margin-right: 32px;
+    width: 30%;
+}
+
+.category-right-side button {
+    background-color: #ffa41c;
+    width: 98%;
+    padding: 12px;
+    border: 1px solid #ffa41c;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}

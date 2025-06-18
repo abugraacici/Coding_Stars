@@ -1,0 +1,97 @@
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
+.page h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.actions {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.actions button {
+    padding: 10px 16px;
+    border: none;
+    background-color: #ffa41c;
+    color: black;
+    border-radius: 8px;
+    width: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.actions button:hover {
+    background-color: #fb8f50;
+}
+
+.inner-cotainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 16px;
+}
+
+.saved-address-item {
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: flex;
+    width: 90%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 16px;
+}
+
+.saved-address-item:hover {
+    background-color: #e6e6e6;
+}
+
+.address-name {
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.address-location {
+    color: #555;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.address-description {
+    color: #777;
+    font-size: 13px;
+}
+
+.delete-button {
+    background: transparent;
+    border: none;
+    color: #c00;
+    font-size: 18px;
+    margin-left: 8px;
+    cursor: pointer;
+    align-self: flex-start;
+    padding: 4px;
+    transition: color 0.2s ease;
+}
+
+.delete-button:hover {
+    color: #900;
+}
+
+.empty-list {
+    color: black;
+    font-weight: 500;
+}

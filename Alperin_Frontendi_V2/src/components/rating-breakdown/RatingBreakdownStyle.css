@@ -1,0 +1,47 @@
+.rating-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.rating-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 40%;
+}
+
+.star-label {
+    width: 60px;
+    text-align: right;
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.bar-wrapper {
+    flex: 1;
+    height: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    position: relative;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    background-color: #ffa41c;
+    border-radius: 4px 0 0 4px;
+    border-radius: 4px;
+}
+
+.percent-label {
+    width: 40px;
+    font-size: 14px;
+    text-align: left;
+    color: black;
+}
