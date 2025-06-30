@@ -1,23 +1,31 @@
-Domain Adresi: domainadresi.com
+Domain Adresi: https://superzone-fe.vercel.app/
 
-Docker: Kullanılmadı/Kullanıldı.
+Docker:Kullanıldı.
 
-REST API: Kullanıldı/Kullanılmadı.
+REST API: Kullanıldı.
 
-Redis:Kullanıldı/Kullanılmadı.
+Redis:Kullanılmadı.
 
-RabbitMQ: Kullanıldı/Kullanılmadı.
+RabbitMQ:Kullanılmadı.
 
-CI/CD: Kullanıldı/Kullanılmadı.
+CI/CD: Kullanıldı.
 
-# Ali Atabin Backend #
-1. Kayıt Ol
-2. Giriş Yap
-3. 2FA Sayfası
-4. .....
-5. .....
+# Alper Buğra Açıcı Backend #
+1. Alış-Veriş Yapılacak Hesaba Giriş/Çıkış Yapma(Alper)
+2. Ürün Kategorilendirme(Alper)
+3. Ürün Değerlendirme Yorumları(Alper)
+4. Arama Geçmişi(Alper)
+5. Ödeme Yöntemi(Alper)
+6. Favorilere Ekleme(Alper)
+7. Admin Sayfası(Alper)
+8. Lokasyon Ekleme(Alper)
+[Alperin_Backendi klasörüne git](https://github.com/abugraacici/Coding_Stars/tree/main/Alperin_Backendi)
 
 
+
+
+
+  
 # Ayşe Toputut Backend #
 1. ....
 2. ....
