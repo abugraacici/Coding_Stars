@@ -1,0 +1,73 @@
+.provider {
+    width: 90%;
+    height: 200px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+}
+
+.item-image {
+    width: 180px;
+    height: 192px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.info-provider {
+    display: flex;
+    height: 100%;
+    padding-top: 0px;
+    margin-left: 16px;
+    flex-direction: column;
+    gap: 1;
+}
+
+.item-name {
+    margin-top: 0px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.item-description {
+    margin-top: -8px;
+}
+
+.quantity-provider {
+    display: flex;
+    align-items: end;
+    height: 100%;
+    margin-bottom: 4px;
+}
+
+.item-price {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.quantity-button {
+    background-color: #fcb141;
+    border-radius: 8px;
+    border-width: 0;
+    font-size: 16px;
+    width: 36px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.quantity-count {
+    min-width: 24px;
+    text-align: center;
+    font-size: 24px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.quantity-delete {
+    margin-bottom: 26px;
+    margin-left: 16px;
+}

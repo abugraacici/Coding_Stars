@@ -1,0 +1,57 @@
+.opd-wrapper {
+    width: 80%;
+    margin-bottom: 16px;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.opd-wrapper img {
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.opd-info-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    width: 30%;
+}
+
+.opd-product-name {
+    color: black;
+    margin: 0px;
+}
+
+.opd-price {
+    color: #ffa41c;
+    font-weight: 600;
+    margin-bottom: -16px;
+    font-size: 12px;
+}
+
+.opd-total-price {
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.opd-status {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.opd-seller-city {
+    color: black;
+    font-size: 14px;
+    height: 100%;
+    width: 50%;
+    text-align: end;
+}

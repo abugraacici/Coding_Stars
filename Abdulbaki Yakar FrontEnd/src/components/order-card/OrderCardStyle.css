@@ -1,0 +1,72 @@
+.order-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: #fff;
+    margin-bottom: 16px;
+}
+
+.order-images {
+    display: flex;
+    gap: 8px;
+}
+
+.order-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+.order-image.extra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    font-weight: bold;
+    font-size: 14px;
+    color: #555;
+}
+
+.order-image.empty-extra {
+    width: 48px;
+    height: 48px;
+    border-color: white;
+}
+
+.order-info {
+    flex: 1;
+    margin-left: 16px;
+    padding-bottom: 16px;
+}
+
+.order-number {
+    font-size: 16px;
+    color: #555;
+}
+
+.order-status {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+.status-icon {
+    margin-right: 6px;
+}
+
+.order-meta {
+    text-align: right;
+    min-width: 120px;
+}
+
+.order-price {
+    color: #ffa41c;
+    font-weight: bold;
+}

@@ -1,0 +1,43 @@
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
+.page h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.bottom-slice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 83%;
+}
+
+.bottom-card {
+    border: 1px solid #ddd;
+    width: 45%;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.bottom-card h3 {
+    margin: 0px;
+}
+
+.bottom-card-title {
+    margin: 0px;
+    margin-top: 8px;
+}
+
+.bottom-card-description {
+    font-size: 14px;
+    margin: 0px;
+    margin-top: 4px;
+}
+
+.bottom-card-fullname {
+    color: black;
+    font-weight: 600;
+}
