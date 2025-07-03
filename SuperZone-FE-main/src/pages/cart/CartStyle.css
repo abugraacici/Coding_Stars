@@ -1,0 +1,36 @@
+.cart-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-side {
+    width: 70%;
+}
+
+.right-side {
+    width: 30%;
+    height: 220px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding-left: 32px;
+    padding-top: 16px;
+}
+
+.right-side h1 {
+    color: #fa9909;
+}
+
+.right-side p {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.right-side button {
+    background-color: #ffa41c;
+    width: 90%;
+    padding: 16px;
+    border: 1px solid #ffa41c;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 700;
+}
