@@ -1,1 +1,0 @@
-# Abdulbaki Yakar-Backend eklendi
