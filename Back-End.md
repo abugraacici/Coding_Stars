@@ -1,4 +1,4 @@
-Domain Adresi: https://superzone-fe.vercel.app/
+Domain Adresi: [https://superzone-fe.vercel.app/](https://www.alperbugradev.com/)
 
 Docker:Kullanıldı.
 
